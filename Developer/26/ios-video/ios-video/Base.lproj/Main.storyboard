@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_video" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7J-2J-Zpj">
+                                <state key="normal" title="Internet-Video abspielen (AVPlayer)"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jC-zj-PE3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="na5-hL-zOC">
+                                <state key="normal" title="YouTube-Video in Webbrowser abspielen"/>
+                                <connections>
+                                    <action selector="playYouTube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOJ-dg-AdZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nz-0B-Rri">
+                                <state key="normal" title="Video aus Medienbibliothek auswählen"/>
+                                <connections>
+                                    <action selector="chooseVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hpl-zB-Dfu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atl-yb-bNf">
+                                <state key="normal" title="Inhalt des temp. Verzeichnisses anzeigen"/>
+                                <connections>
+                                    <action selector="showTmp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7JM-of-PZn"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-CT-3cb">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ml-nn-hvX">
+                                <state key="normal" title="Dateien im temp. Verzeichnis löschen"/>
+                                <connections>
+                                    <action selector="deleteTmp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KFa-6d-wg4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZ6-cs-jPS">
+                                <state key="normal" title="Neues Video aufnehmen"/>
+                                <connections>
+                                    <action selector="recordVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qEt-fT-Gx4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i7J-2J-Zpj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="3cs-H9-dq0"/>
+                            <constraint firstItem="3Nz-0B-Rri" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5Rd-Lq-uwK"/>
+                            <constraint firstItem="8Ml-nn-hvX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Azb-EW-aJW"/>
+                            <constraint firstItem="jjS-CT-3cb" firstAttribute="top" secondItem="atl-yb-bNf" secondAttribute="bottom" constant="8" id="CJm-DP-GWm"/>
+                            <constraint firstItem="na5-hL-zOC" firstAttribute="top" secondItem="i7J-2J-Zpj" secondAttribute="bottom" constant="8" id="HOl-RF-KKj"/>
+                            <constraint firstItem="atl-yb-bNf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="N7h-0Y-Emd"/>
+                            <constraint firstItem="qZ6-cs-jPS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Zg9-4J-1K2"/>
+                            <constraint firstItem="na5-hL-zOC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="buB-ab-B7P"/>
+                            <constraint firstItem="3Nz-0B-Rri" firstAttribute="top" secondItem="na5-hL-zOC" secondAttribute="bottom" constant="8" id="csa-b2-7rj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Ml-nn-hvX" secondAttribute="bottom" constant="20" id="eR8-c2-InK"/>
+                            <constraint firstItem="jjS-CT-3cb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fuS-8J-fXX"/>
+                            <constraint firstItem="i7J-2J-Zpj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="jW1-Aw-DAg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jjS-CT-3cb" secondAttribute="bottom" constant="61" id="npN-Xu-YD0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jjS-CT-3cb" secondAttribute="trailing" constant="7" id="oqT-SE-I3l"/>
+                            <constraint firstItem="qZ6-cs-jPS" firstAttribute="top" secondItem="3Nz-0B-Rri" secondAttribute="bottom" constant="8" id="uKm-Lm-CIv"/>
+                            <constraint firstItem="atl-yb-bNf" firstAttribute="top" secondItem="qZ6-cs-jPS" secondAttribute="bottom" constant="13" id="wbF-fC-j4o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtTmp" destination="jjS-CT-3cb" id="0H7-g9-voD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="-6.746626686656672"/>
+        </scene>
+    </scenes>
+</document>

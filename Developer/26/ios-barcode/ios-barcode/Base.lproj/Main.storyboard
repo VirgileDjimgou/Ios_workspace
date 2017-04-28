@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_barcode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode-Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFX-OU-t3M">
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJG-pH-y1W">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyA-Bg-pZl">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="▶︎"/>
+                                <connections>
+                                    <action selector="startScanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nk1-bd-vJo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WFX-OU-t3M" firstAttribute="top" secondItem="aJG-pH-y1W" secondAttribute="bottom" constant="8" id="4Yc-XY-cpe"/>
+                            <constraint firstItem="aJG-pH-y1W" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7hO-0T-cf7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WFX-OU-t3M" secondAttribute="bottom" constant="8" id="9ns-ag-cAs"/>
+                            <constraint firstItem="aJG-pH-y1W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Hzz-ie-Fw0"/>
+                            <constraint firstItem="aJG-pH-y1W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="RGp-kI-1nk"/>
+                            <constraint firstItem="KyA-Bg-pZl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bPp-7K-LWr"/>
+                            <constraint firstItem="KyA-Bg-pZl" firstAttribute="centerY" secondItem="WFX-OU-t3M" secondAttribute="centerY" id="jqg-Ba-0Fy"/>
+                            <constraint firstItem="WFX-OU-t3M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pNp-v6-doG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="aJG-pH-y1W" id="5UY-Lz-sjV"/>
+                        <outlet property="startBtn" destination="KyA-Bg-pZl" id="h8c-Sb-wLV"/>
+                        <outlet property="statusLbl" destination="WFX-OU-t3M" id="Ip8-25-Wyi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.75" y="45.422535211267608"/>
+        </scene>
+    </scenes>
+</document>

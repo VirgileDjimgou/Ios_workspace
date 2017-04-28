@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xhj-ZM-j0P">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailVC-->
+        <scene sceneID="4XN-lQ-km4">
+            <objects>
+                <viewController id="djG-WO-y50" customClass="DetailVC" customModule="ios_nytimes_bestseller_split" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Q1-ZS-Yrg"/>
+                        <viewControllerLayoutGuide type="bottom" id="HIv-gi-FrW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kfP-es-hZ0">
+                        <rect key="frame" x="0.0" y="0.0" width="415" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xlX-ky-ZrN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K54-pG-TWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298" y="1858"/>
+        </scene>
+        <!--NYT-Bestseller-->
+        <scene sceneID="k8b-Bm-VKU">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="pNn-cF-MQu" customClass="MasterTVC" customModule="ios_nytimes_bestseller_split" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CHd-VO-MLb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="protocell" textLabel="wuZ-yo-RSt" detailTextLabel="CkY-ue-kUD" style="IBUITableViewCellStyleSubtitle" id="46C-Mn-osg">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="46C-Mn-osg" id="Bbs-ha-dbQ">
+                                    <frame key="frameInset" width="320" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wuZ-yo-RSt">
+                                            <frame key="frameInset" minX="15" minY="5" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CkY-ue-kUD">
+                                            <frame key="frameInset" minX="14.999999999999996" minY="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="3i8-XI-Lgc" kind="showDetail" identifier="segueMasterDetail" id="7IA-76-wkP"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pNn-cF-MQu" id="AFg-Uu-g1S"/>
+                            <outlet property="delegate" destination="pNn-cF-MQu" id="sc1-sM-ZXs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="NYT-Bestseller" id="qDz-wU-se1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLF-Rc-LUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="546" y="2528"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jMj-0N-ihq">
+            <objects>
+                <navigationController id="xIU-mN-GNy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="McO-FK-NZm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pNn-cF-MQu" kind="relationship" relationship="rootViewController" id="RbD-ag-tdS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OzC-Km-Mxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="1726"/>
+        </scene>
+        <!--SplitVC-->
+        <scene sceneID="eut-iu-L7o">
+            <objects>
+                <splitViewController id="xhj-ZM-j0P" customClass="SplitVC" customModule="ios_nytimes_bestseller_split" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="xIU-mN-GNy" kind="relationship" relationship="masterViewController" id="O9e-xC-Hcu"/>
+                        <segue destination="3i8-XI-Lgc" kind="relationship" relationship="detailViewController" id="gf4-vc-oZi"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6v-38-pQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="896"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iGR-uZ-kRt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3i8-XI-Lgc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AFe-tO-ZyM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="djG-WO-y50" kind="relationship" relationship="rootViewController" id="eAQ-Oa-9Qt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gtu-2J-j47" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211" y="1054"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7IA-76-wkP"/>
+    </inferredMetricsTieBreakers>
+</document>

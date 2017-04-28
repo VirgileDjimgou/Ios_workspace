@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		380D3A6B1AFA131400B1D875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380D3A6A1AFA131400B1D875 /* AppDelegate.swift */; };
+		380D3A6D1AFA131400B1D875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380D3A6C1AFA131400B1D875 /* ViewController.swift */; };
+		380D3A6F1AFA131400B1D875 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380D3A6E1AFA131400B1D875 /* Images.xcassets */; };
+		380D3A721AFA131400B1D875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380D3A701AFA131400B1D875 /* Main.storyboard */; };
+		380D3A881AFA144E00B1D875 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380D3A871AFA144E00B1D875 /* MyView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		380D3A651AFA131400B1D875 /* macos-keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macos-keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		380D3A691AFA131400B1D875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		380D3A6A1AFA131400B1D875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		380D3A6C1AFA131400B1D875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		380D3A6E1AFA131400B1D875 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		380D3A711AFA131400B1D875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		380D3A871AFA144E00B1D875 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		380D3A621AFA131400B1D875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		380D3A5C1AFA131400B1D875 = {
+			isa = PBXGroup;
+			children = (
+				380D3A671AFA131400B1D875 /* macos-keyboard */,
+				380D3A661AFA131400B1D875 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		380D3A661AFA131400B1D875 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				380D3A651AFA131400B1D875 /* macos-keyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		380D3A671AFA131400B1D875 /* macos-keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				380D3A6C1AFA131400B1D875 /* ViewController.swift */,
+				380D3A701AFA131400B1D875 /* Main.storyboard */,
+				380D3A871AFA144E00B1D875 /* MyView.swift */,
+				380D3A681AFA131400B1D875 /* Supporting Files */,
+			);
+			name = "macos-keyboard";
+			path = "osx-keyboard";
+			sourceTree = "<group>";
+		};
+		380D3A681AFA131400B1D875 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				380D3A6A1AFA131400B1D875 /* AppDelegate.swift */,
+				380D3A6E1AFA131400B1D875 /* Images.xcassets */,
+				380D3A691AFA131400B1D875 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		380D3A641AFA131400B1D875 /* macos-keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 380D3A811AFA131500B1D875 /* Build configuration list for PBXNativeTarget "macos-keyboard" */;
+			buildPhases = (
+				380D3A611AFA131400B1D875 /* Sources */,
+				380D3A621AFA131400B1D875 /* Frameworks */,
+				380D3A631AFA131400B1D875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "macos-keyboard";
+			productName = "osx-keyboard";
+			productReference = 380D3A651AFA131400B1D875 /* macos-keyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		380D3A5D1AFA131400B1D875 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Michael Kofler";
+				TargetAttributes = {
+					380D3A641AFA131400B1D875 = {
+						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 380D3A601AFA131400B1D875 /* Build configuration list for PBXProject "macos-keyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 380D3A5C1AFA131400B1D875;
+			productRefGroup = 380D3A661AFA131400B1D875 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				380D3A641AFA131400B1D875 /* macos-keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		380D3A631AFA131400B1D875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380D3A6F1AFA131400B1D875 /* Images.xcassets in Resources */,
+				380D3A721AFA131400B1D875 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		380D3A611AFA131400B1D875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380D3A881AFA144E00B1D875 /* MyView.swift in Sources */,
+				380D3A6D1AFA131400B1D875 /* ViewController.swift in Sources */,
+				380D3A6B1AFA131400B1D875 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		380D3A701AFA131400B1D875 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				380D3A711AFA131400B1D875 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		380D3A7F1AFA131500B1D875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		380D3A801AFA131500B1D875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		380D3A821AFA131500B1D875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "osx-keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.kofler.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		380D3A831AFA131500B1D875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "osx-keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.kofler.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		380D3A601AFA131400B1D875 /* Build configuration list for PBXProject "macos-keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				380D3A7F1AFA131500B1D875 /* Debug */,
+				380D3A801AFA131500B1D875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		380D3A811AFA131500B1D875 /* Build configuration list for PBXNativeTarget "macos-keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				380D3A821AFA131500B1D875 /* Debug */,
+				380D3A831AFA131500B1D875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 380D3A5D1AFA131400B1D875 /* Project object */;
+}

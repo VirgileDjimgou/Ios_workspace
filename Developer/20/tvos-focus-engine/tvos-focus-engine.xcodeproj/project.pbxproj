@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		382E42CC1D999CD20045CA0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E42CB1D999CD20045CA0B /* AppDelegate.swift */; };
+		382E42CE1D999CD20045CA0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E42CD1D999CD20045CA0B /* ViewController.swift */; };
+		382E42D11D999CD20045CA0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 382E42CF1D999CD20045CA0B /* Main.storyboard */; };
+		382E42D31D999CD20045CA0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382E42D21D999CD20045CA0B /* Assets.xcassets */; };
+		382E42DB1D999DB60045CA0B /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382E42DA1D999DB60045CA0B /* MyView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		382E42C81D999CD20045CA0B /* tvos-focus-engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvos-focus-engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		382E42CB1D999CD20045CA0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		382E42CD1D999CD20045CA0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		382E42D01D999CD20045CA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		382E42D21D999CD20045CA0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		382E42D41D999CD20045CA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		382E42DA1D999DB60045CA0B /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		382E42C51D999CD20045CA0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		382E42BF1D999CD20045CA0B = {
+			isa = PBXGroup;
+			children = (
+				382E42CA1D999CD20045CA0B /* tvos-focus-engine */,
+				382E42C91D999CD20045CA0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		382E42C91D999CD20045CA0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				382E42C81D999CD20045CA0B /* tvos-focus-engine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		382E42CA1D999CD20045CA0B /* tvos-focus-engine */ = {
+			isa = PBXGroup;
+			children = (
+				382E42CF1D999CD20045CA0B /* Main.storyboard */,
+				382E42CD1D999CD20045CA0B /* ViewController.swift */,
+				382E42DA1D999DB60045CA0B /* MyView.swift */,
+				382E42DC1D999DD70045CA0B /* other */,
+			);
+			path = "tvos-focus-engine";
+			sourceTree = "<group>";
+		};
+		382E42DC1D999DD70045CA0B /* other */ = {
+			isa = PBXGroup;
+			children = (
+				382E42D21D999CD20045CA0B /* Assets.xcassets */,
+				382E42CB1D999CD20045CA0B /* AppDelegate.swift */,
+				382E42D41D999CD20045CA0B /* Info.plist */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		382E42C71D999CD20045CA0B /* tvos-focus-engine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 382E42D71D999CD20045CA0B /* Build configuration list for PBXNativeTarget "tvos-focus-engine" */;
+			buildPhases = (
+				382E42C41D999CD20045CA0B /* Sources */,
+				382E42C51D999CD20045CA0B /* Frameworks */,
+				382E42C61D999CD20045CA0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tvos-focus-engine";
+			productName = "tvos-focus-engine";
+			productReference = 382E42C81D999CD20045CA0B /* tvos-focus-engine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		382E42C01D999CD20045CA0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Michael Kofler";
+				TargetAttributes = {
+					382E42C71D999CD20045CA0B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BS3PP3JBPG;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 382E42C31D999CD20045CA0B /* Build configuration list for PBXProject "tvos-focus-engine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 382E42BF1D999CD20045CA0B;
+			productRefGroup = 382E42C91D999CD20045CA0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				382E42C71D999CD20045CA0B /* tvos-focus-engine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		382E42C61D999CD20045CA0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382E42D31D999CD20045CA0B /* Assets.xcassets in Resources */,
+				382E42D11D999CD20045CA0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		382E42C41D999CD20045CA0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382E42DB1D999DB60045CA0B /* MyView.swift in Sources */,
+				382E42CE1D999CD20045CA0B /* ViewController.swift in Sources */,
+				382E42CC1D999CD20045CA0B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		382E42CF1D999CD20045CA0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				382E42D01D999CD20045CA0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		382E42D51D999CD20045CA0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		382E42D61D999CD20045CA0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		382E42D81D999CD20045CA0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = BS3PP3JBPG;
+				INFOPLIST_FILE = "tvos-focus-engine/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.kofler.tvos-focus-engine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		382E42D91D999CD20045CA0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = BS3PP3JBPG;
+				INFOPLIST_FILE = "tvos-focus-engine/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.kofler.tvos-focus-engine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		382E42C31D999CD20045CA0B /* Build configuration list for PBXProject "tvos-focus-engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				382E42D51D999CD20045CA0B /* Debug */,
+				382E42D61D999CD20045CA0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		382E42D71D999CD20045CA0B /* Build configuration list for PBXNativeTarget "tvos-focus-engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				382E42D81D999CD20045CA0B /* Debug */,
+				382E42D91D999CD20045CA0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 382E42C01D999CD20045CA0B /* Project object */;
+}

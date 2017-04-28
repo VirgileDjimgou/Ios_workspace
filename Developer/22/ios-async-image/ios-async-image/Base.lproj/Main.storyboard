@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_async_image" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EJj-wL-m8F"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1xB-Kg-Poh"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWV-Ka-T44">
+                                <state key="normal" title="Rot"/>
+                                <connections>
+                                    <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RPM-cA-Ulm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaX-Gy-TNy">
+                                <state key="normal" title="Blau"/>
+                                <connections>
+                                    <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="buW-Mj-TD9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2r-Sp-Vyj">
+                                <state key="normal" title="Grün"/>
+                                <connections>
+                                    <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nno-5R-Aer"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EJj-wL-m8F" secondAttribute="bottom" constant="61" id="0a5-gr-EZM"/>
+                            <constraint firstItem="EJj-wL-m8F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="78b-vi-Ebl"/>
+                            <constraint firstItem="B2r-Sp-Vyj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cn0-vp-3wj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1xB-Kg-Poh" secondAttribute="bottom" constant="61" id="NR8-qZ-xZv"/>
+                            <constraint firstItem="dWV-Ka-T44" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Ok4-jg-mvV"/>
+                            <constraint firstItem="CaX-Gy-TNy" firstAttribute="top" secondItem="1xB-Kg-Poh" secondAttribute="bottom" constant="11" id="Wkd-Vg-9Qm"/>
+                            <constraint firstItem="B2r-Sp-Vyj" firstAttribute="top" secondItem="1xB-Kg-Poh" secondAttribute="bottom" constant="11" id="Zio-Wz-fQw"/>
+                            <constraint firstItem="CaX-Gy-TNy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="e5C-Kz-BMP"/>
+                            <constraint firstItem="dWV-Ka-T44" firstAttribute="top" secondItem="1xB-Kg-Poh" secondAttribute="bottom" constant="11" id="ebg-XR-Rcw"/>
+                            <constraint firstItem="1xB-Kg-Poh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="fWR-hb-Xn1"/>
+                            <constraint firstAttribute="trailing" secondItem="1xB-Kg-Poh" secondAttribute="trailing" constant="8" id="qBh-Ns-PwG"/>
+                            <constraint firstAttribute="trailing" secondItem="EJj-wL-m8F" secondAttribute="trailing" constant="8" id="rpq-kh-Ol3"/>
+                            <constraint firstItem="EJj-wL-m8F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="uDg-Kc-gui"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgview" destination="EJj-wL-m8F" id="Bmi-ZB-kaz"/>
+                        <outlet property="progress" destination="1xB-Kg-Poh" id="qFp-Aa-0kt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24.375" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+</document>

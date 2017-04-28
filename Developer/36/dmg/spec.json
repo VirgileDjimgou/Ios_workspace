@@ -1,0 +1,15 @@
+{
+  "title":      "Icon Resizer",
+  "background": "background.png",
+  "icon-size":  80,
+  "contents": [
+    { "x": 100, 
+      "y": 320, 
+      "type": "file", 
+      "path": "Icon-Resizer.app" },
+    { "x": 320, 
+      "y": 320, 
+      "type": "link", 
+      "path": "/Applications" }
+  ]
+}

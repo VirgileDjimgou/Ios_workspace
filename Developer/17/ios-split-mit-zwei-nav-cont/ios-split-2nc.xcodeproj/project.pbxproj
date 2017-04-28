@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3811A8631D76E1A200D836DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3811A8621D76E1A200D836DE /* AppDelegate.swift */; };
+		3811A8681D76E1A200D836DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3811A8661D76E1A200D836DE /* Main.storyboard */; };
+		3811A86A1D76E1A200D836DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3811A8691D76E1A200D836DE /* Assets.xcassets */; };
+		3811A86D1D76E1A200D836DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3811A86B1D76E1A200D836DE /* LaunchScreen.storyboard */; };
+		3811A8751D76FFBD00D836DE /* MasterTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3811A8741D76FFBD00D836DE /* MasterTVC.swift */; };
+		3811A8771D77046800D836DE /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3811A8761D77046800D836DE /* DetailVC.swift */; };
+		3811A8791D770B2E00D836DE /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3811A8781D770B2E00D836DE /* MyColor.swift */; };
+		3811A88E1D774A2C00D836DE /* SplitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3811A88D1D774A2C00D836DE /* SplitVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3811A85F1D76E1A200D836DE /* ios-split.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-split.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3811A8621D76E1A200D836DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3811A8671D76E1A200D836DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3811A8691D76E1A200D836DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3811A86C1D76E1A200D836DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3811A86E1D76E1A200D836DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3811A8741D76FFBD00D836DE /* MasterTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterTVC.swift; path = ../MasterTVC.swift; sourceTree = "<group>"; };
+		3811A8761D77046800D836DE /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		3811A8781D770B2E00D836DE /* MyColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
+		3811A88D1D774A2C00D836DE /* SplitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3811A85C1D76E1A200D836DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3811A8561D76E1A200D836DE = {
+			isa = PBXGroup;
+			children = (
+				3811A8611D76E1A200D836DE /* ios-split-2nc */,
+				3811A8601D76E1A200D836DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3811A8601D76E1A200D836DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3811A85F1D76E1A200D836DE /* ios-split.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3811A8611D76E1A200D836DE /* ios-split-2nc */ = {
+			isa = PBXGroup;
+			children = (
+				3811A8661D76E1A200D836DE /* Main.storyboard */,
+				3811A8621D76E1A200D836DE /* AppDelegate.swift */,
+				3811A8741D76FFBD00D836DE /* MasterTVC.swift */,
+				3811A88D1D774A2C00D836DE /* SplitVC.swift */,
+				3811A8761D77046800D836DE /* DetailVC.swift */,
+				3811A8781D770B2E00D836DE /* MyColor.swift */,
+				3811A8691D76E1A200D836DE /* Assets.xcassets */,
+				3811A86B1D76E1A200D836DE /* LaunchScreen.storyboard */,
+				3811A86E1D76E1A200D836DE /* Info.plist */,
+			);
+			name = "ios-split-2nc";
+			path = "ios-split";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3811A85E1D76E1A200D836DE /* ios-split */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3811A8711D76E1A200D836DE /* Build configuration list for PBXNativeTarget "ios-split" */;
+			buildPhases = (
+				3811A85B1D76E1A200D836DE /* Sources */,
+				3811A85C1D76E1A200D836DE /* Frameworks */,
+				3811A85D1D76E1A200D836DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-split";
+			productName = "ios-split";
+			productReference = 3811A85F1D76E1A200D836DE /* ios-split.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3811A8571D76E1A200D836DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Michael Kofler";
+				TargetAttributes = {
+					3811A85E1D76E1A200D836DE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BS3PP3JBPG;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3811A85A1D76E1A200D836DE /* Build configuration list for PBXProject "ios-split-2nc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3811A8561D76E1A200D836DE;
+			productRefGroup = 3811A8601D76E1A200D836DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3811A85E1D76E1A200D836DE /* ios-split */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3811A85D1D76E1A200D836DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3811A86D1D76E1A200D836DE /* LaunchScreen.storyboard in Resources */,
+				3811A86A1D76E1A200D836DE /* Assets.xcassets in Resources */,
+				3811A8681D76E1A200D836DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3811A85B1D76E1A200D836DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3811A88E1D774A2C00D836DE /* SplitVC.swift in Sources */,
+				3811A8751D76FFBD00D836DE /* MasterTVC.swift in Sources */,
+				3811A8791D770B2E00D836DE /* MyColor.swift in Sources */,
+				3811A8631D76E1A200D836DE /* AppDelegate.swift in Sources */,
+				3811A8771D77046800D836DE /* DetailVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3811A8661D76E1A200D836DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3811A8671D76E1A200D836DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3811A86B1D76E1A200D836DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3811A86C1D76E1A200D836DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3811A86F1D76E1A200D836DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3811A8701D76E1A200D836DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3811A8721D76E1A200D836DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BS3PP3JBPG;
+				INFOPLIST_FILE = "ios-split/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.kofler.ios-split";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3811A8731D76E1A200D836DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BS3PP3JBPG;
+				INFOPLIST_FILE = "ios-split/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.kofler.ios-split";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3811A85A1D76E1A200D836DE /* Build configuration list for PBXProject "ios-split-2nc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3811A86F1D76E1A200D836DE /* Debug */,
+				3811A8701D76E1A200D836DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3811A8711D76E1A200D836DE /* Build configuration list for PBXNativeTarget "ios-split" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3811A8721D76E1A200D836DE /* Debug */,
+				3811A8731D76E1A200D836DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3811A8571D76E1A200D836DE /* Project object */;
+}

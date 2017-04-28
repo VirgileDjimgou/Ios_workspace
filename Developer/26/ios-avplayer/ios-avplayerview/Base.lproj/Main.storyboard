@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_avplayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKa-1t-7Jv">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="wuT-tg-QfG"/>
+                                </constraints>
+                                <state key="normal" title="ⓒ"/>
+                                <connections>
+                                    <segue destination="RCx-2H-w3O" kind="show" id="vNE-IC-2DB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psC-LR-KS9">
+                                <frame key="frameInset" minX="16" minY="28" width="154" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lokale Datei abspielen"/>
+                                <connections>
+                                    <action selector="playLocal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ia1-sG-CcS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiI-2q-49x">
+                                <frame key="frameInset" minX="16" minY="66" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lokale Datei schneller abspielen"/>
+                                <connections>
+                                    <action selector="playFast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ww0-2G-9CK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa8-i0-7D5">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 Sekunden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wS1-8e-7RH">
+                                <frame key="frameInset" minX="69" minY="207" width="88" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kg-5m-s3O">
+                                <frame key="frameInset" minX="16" minY="104" width="214" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Internet-Radio abspielen (FM4)"/>
+                                <connections>
+                                    <action selector="playRadio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wR9-5E-ghO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REr-KV-rTL">
+                                <frame key="frameInset" minX="16" minY="142" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stopp"/>
+                                <connections>
+                                    <action selector="playLocal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TeJ-KW-ff4"/>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="guo-Io-jnW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIY-YA-kJv">
+                                <frame key="frameInset" minX="16" minY="199" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt;--"/>
+                                <connections>
+                                    <action selector="backwards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ESv-V3-vcE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9z-iL-RZO">
+                                <frame key="frameInset" minX="165" minY="199" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="--&gt;"/>
+                                <connections>
+                                    <action selector="forwards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5R0-hu-E34"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wa8-i0-7D5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lm1-aB-DLh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XKa-1t-7Jv" secondAttribute="bottom" constant="8" id="Vvl-wd-bcv"/>
+                            <constraint firstAttribute="trailing" secondItem="XKa-1t-7Jv" secondAttribute="trailing" constant="6" id="ZSU-Yb-Zjh"/>
+                            <constraint firstItem="XKa-1t-7Jv" firstAttribute="leading" secondItem="Wa8-i0-7D5" secondAttribute="trailing" constant="17" id="rTz-9P-dP1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wa8-i0-7D5" secondAttribute="bottom" constant="12" id="spq-pW-gWA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="statusLbl" destination="Wa8-i0-7D5" id="dHD-nV-E2m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277.60000000000002" y="67.016491754122939"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jMf-gv-RP1">
+            <objects>
+                <viewController id="RCx-2H-w3O" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mWS-Mq-V4f"/>
+                        <viewControllerLayoutGuide type="bottom" id="hGQ-Yb-dCq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IP7-fo-Wk6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4HA-5J-wKH">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Thanks go to:
+
+Lemoncreme @ freesound.org (Piano sound)
+https://www.freesound.org/people/Lemoncreme/sounds/321146/</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlW-fD-XgC">
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <segue destination="lGO-c3-PXf" kind="unwind" unwindAction="unwindToMainView:" id="63u-er-GOu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4HA-5J-wKH" firstAttribute="leading" secondItem="IP7-fo-Wk6" secondAttribute="leadingMargin" id="FPx-Zk-JVc"/>
+                            <constraint firstItem="hGQ-Yb-dCq" firstAttribute="top" secondItem="tlW-fD-XgC" secondAttribute="bottom" constant="8" id="JVY-vD-kOt"/>
+                            <constraint firstItem="hGQ-Yb-dCq" firstAttribute="top" secondItem="4HA-5J-wKH" secondAttribute="bottom" constant="52" id="NNO-j4-8yA"/>
+                            <constraint firstItem="tlW-fD-XgC" firstAttribute="centerX" secondItem="IP7-fo-Wk6" secondAttribute="centerX" id="ZbX-IR-1nq"/>
+                            <constraint firstItem="4HA-5J-wKH" firstAttribute="trailing" secondItem="IP7-fo-Wk6" secondAttribute="trailingMargin" id="kaT-uD-SnD"/>
+                            <constraint firstItem="4HA-5J-wKH" firstAttribute="top" secondItem="mWS-Mq-V4f" secondAttribute="bottom" constant="8" id="ub8-zc-Y7E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLv-SD-J7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lGO-c3-PXf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="201.7605633802817"/>
+        </scene>
+    </scenes>
+</document>

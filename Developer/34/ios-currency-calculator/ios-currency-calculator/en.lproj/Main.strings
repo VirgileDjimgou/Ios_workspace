@@ -1,0 +1,33 @@
+/* Class = "UIViewController"; title = "Calculator"; ObjectID = "9pv-A4-QxB"; */
+"9pv-A4-QxB.title" = "Calculator";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "OZN-OE-Rw0"; */
+"OZN-OE-Rw0.text" = "2";
+
+/* Class = "UILabel"; text = "EUR"; ObjectID = "Opv-PB-8Wy"; */
+"Opv-PB-8Wy.text" = "EUR";
+
+/* Class = "UILabel"; text = "USD"; ObjectID = "TUw-fr-itf"; */
+"TUw-fr-itf.text" = "USD";
+
+/* Class = "UITextField"; text = "56,78"; ObjectID = "UbC-KO-iEE"; */
+"UbC-KO-iEE.text" = "56,78";
+
+/* Class = "UITextField"; text = "12,34"; ObjectID = "YWY-GU-3Aa"; */
+"YWY-GU-3Aa.text" = "12,34";
+
+/* Class = "UITabBarItem"; title = "Umrechnung"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Converter";
+
+/* Class = "UITabBarItem"; title = "Einstellungen"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Settings";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "ccU-Kw-y1d"; */
+"ccU-Kw-y1d.text" = "1";
+
+/* Class = "UILabel"; text = "Kurse vom 1.1.2016"; ObjectID = "dvM-3I-7ch"; */
+"dvM-3I-7ch.text" = "Rates as of Dec. 1st 2016";
+
+/* Class = "UIButton"; normalTitle = "Kurse neu laden"; ObjectID = "fpL-GL-4zm"; */
+"fpL-GL-4zm.normalTitle" = "Reload rates";
+
