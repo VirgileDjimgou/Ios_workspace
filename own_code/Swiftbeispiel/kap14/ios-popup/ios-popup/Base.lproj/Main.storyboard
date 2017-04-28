@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10115" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_popup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKA-Ai-I9s">
+                                <rect key="frame" x="35" y="53" width="30" height="30"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jMt-0X-ze4" kind="popoverPresentation" popoverAnchorView="YKA-Ai-I9s" id="34K-PK-5ii">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaf-Zw-vPH">
+                                <rect key="frame" x="35" y="106" width="90" height="30"/>
+                                <state key="normal" title="Slider-Popup">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSlider:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qMQ-Eq-3ad"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhI-00-Ocj">
+                                <rect key="frame" x="35" y="156" width="64" height="30"/>
+                                <state key="normal" title="Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYc-ou-YL5"/>
+                                    <action selector="btnSlider:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sl3-wE-GND"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="386"/>
+        </scene>
+        <!--Popup View Controller-->
+        <scene sceneID="Zhc-Y6-JLb">
+            <objects>
+                <viewController id="jMt-0X-ze4" customClass="PopupViewController" customModule="ios_popup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="65m-Jd-LN1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fgd-3I-VwG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fky-oO-t7l">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rr2-gi-PVn">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rr2-gi-PVn" secondAttribute="trailing" id="0nl-JF-XsQ"/>
+                            <constraint firstItem="rr2-gi-PVn" firstAttribute="leading" secondItem="fky-oO-t7l" secondAttribute="leading" id="9JA-i9-Esn"/>
+                            <constraint firstItem="rr2-gi-PVn" firstAttribute="top" secondItem="fky-oO-t7l" secondAttribute="top" id="c17-EO-cO0"/>
+                            <constraint firstItem="rr2-gi-PVn" firstAttribute="bottom" secondItem="Fgd-3I-VwG" secondAttribute="top" id="mL9-A2-NuX"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="infotxt" destination="rr2-gi-PVn" id="nHb-0W-RUK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ge-Pg-yT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571" y="252"/>
+        </scene>
+        <!--Slider View Controller-->
+        <scene sceneID="J80-gi-hWQ">
+            <objects>
+                <viewController storyboardIdentifier="SliderPopup" id="5eK-qg-mNc" customClass="SliderViewController" customModule="ios_popup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xUG-uA-Rnl"/>
+                        <viewControllerLayoutGuide type="bottom" id="tKa-8q-qtO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w8d-n2-S4P">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="70"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-V1-KiN">
+                                <rect key="frame" x="5" y="8" width="242" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9w5-tw-QiX">
+                                <rect key="frame" x="215" y="40" width="30" height="30"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EXj-i7-HNl" kind="unwind" unwindAction="unwindToMainVC:" id="pDN-en-d7C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="250" height="70"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="250" height="70"/>
+                    <connections>
+                        <outlet property="slider" destination="TC1-V1-KiN" id="cq5-7b-xCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXH-Pi-5EK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="EXj-i7-HNl" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="571" y="547"/>
+        </scene>
+    </scenes>
+</document>
