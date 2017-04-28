@@ -14,6 +14,15 @@ func sayHello(name: String)  {
   print("Hello, \(name)!")
 }
 
+
+for i in 1...100{
+    print(i)
+    let y = sin(Double(i)/10)
+    
+    print("x=\(i) , y=\(y)")
+}
+
+
 // den Namen des aktiven Nutzers ermitteln
 var username = NSFullUserName()
 
@@ -30,6 +39,7 @@ print("Es wurden \(args.count-1) " +
 for i in 1..<args.count  {
   print("Parameter \(i): \(args[i])")
 }
+
 
 
 
