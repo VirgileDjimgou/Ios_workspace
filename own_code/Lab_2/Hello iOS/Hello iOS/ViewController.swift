@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Hello iOS
 //
-//  Created by Bergen, Dominik on 22.11.16.
-//  Copyright © 2016 Hochschule Aalen. All rights reserved.
+//  Created by Djimgou , Patrick on 30.04.17.
+//  Copyright © 2017 Hochschule Aalen. All rights reserved.
 //
 
 import UIKit
