@@ -12,6 +12,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet var allButtons: [UIButton]!
     
+    
+    
+    @IBAction func TestButton(_ sender: UIButton) {
+        let Formater = DateFormatter()
+        Formater.dateFormat = "d.M.yyyy H:mm:ss"
+        textView.text.append(Formater.string(from: Date()) + "new Test Button wurde gedruckt " + "\n")
+        
+    }
+    
     @IBAction func helloWorldClick(_ sender: UIButton) {
         let formatter = DateFormatter()
         formatter.dateFormat = "d.M.yyyy H:mm:ss"
