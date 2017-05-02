@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Temperature Calculator
 //
-//  Created by Bergen, Dominik on 22.11.16.
-//  Copyright © 2016 Hochschule Aalen. All rights reserved.
+//  Created by Djimgou, Patrick on 01.05.17.
+//  Copyright © 2017 Hochschule Aalen. All rights reserved.
 //
 
 import UIKit
