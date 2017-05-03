@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         _ = y/x
     }
 
-    func performCalculation (iterations: Int, output: UITextView, tag: String) {
+    func performCalculation (iterations: Int, tag: String) {
         let start = CFAbsoluteTimeGetCurrent()
         for value in 0 ..< iterations {
             self.doCalc()
@@ -33,7 +33,13 @@ class ViewController: UIViewController {
     func dispatchAsyncTasks () {
         let concurrentQueue = DispatchQueue(label: "AsyncQueue", attributes: .concurrent)
         
-       
+        concurrentQueue.async {
+            
+            let c = {
+                
+                performCalculation(1000, tag: "async0") }
+            dispatch_async(queue, c)            <#code#>
+        }
     }
     
     
@@ -48,7 +54,10 @@ class ViewController: UIViewController {
     @IBAction func dispatch_asynchone(_ sender: Any) {
         
         
-        
+        let c = {
+            
+            performCalculation(1000, tag: "async0") }
+        dispatch_async(queue, c)
         
     }
     
