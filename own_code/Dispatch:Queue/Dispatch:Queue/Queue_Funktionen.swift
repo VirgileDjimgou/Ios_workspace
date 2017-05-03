@@ -10,10 +10,13 @@ import Foundation
 
 import UIKit
 
-class Calculator {
+class Queue_Funktionen {
+    
+    
     func doCalc(_ value : Double) {
         sqrt(abs(value))
     }
+    
     
     func performCalculation (iterations: Int, output: UITextView, tag: String) {
         let start = CFAbsoluteTimeGetCurrent()
