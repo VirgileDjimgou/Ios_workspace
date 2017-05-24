@@ -14,6 +14,7 @@
 		4FC5A6B01ED5293F00CE52F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC5A6AE1ED5293F00CE52F0 /* LaunchScreen.storyboard */; };
 		4FC5A6BB1ED5294100CE52F0 /* IosUnitTestsintroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC5A6BA1ED5294100CE52F0 /* IosUnitTestsintroTests.swift */; };
 		4FC5A6CC1ED52A1200CE52F0 /* IosUnitTestsintroTests_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC5A6CB1ED52A1200CE52F0 /* IosUnitTestsintroTests_2.swift */; };
+		4FC5A6D61ED5336A00CE52F0 /* Pokemon_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC5A6D51ED5336A00CE52F0 /* Pokemon_2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4FC5A6C91ED52A1200CE52F0 /* IosUnitTestsintroTests_2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosUnitTestsintroTests_2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC5A6CB1ED52A1200CE52F0 /* IosUnitTestsintroTests_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosUnitTestsintroTests_2.swift; sourceTree = "<group>"; };
 		4FC5A6CD1ED52A1200CE52F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FC5A6D51ED5336A00CE52F0 /* Pokemon_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon_2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4FC5A6AC1ED5293F00CE52F0 /* Assets.xcassets */,
 				4FC5A6AE1ED5293F00CE52F0 /* LaunchScreen.storyboard */,
 				4FC5A6B11ED5293F00CE52F0 /* Info.plist */,
+				4FC5A6D51ED5336A00CE52F0 /* Pokemon_2.swift */,
 			);
 			path = IosUnitTestsintro;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC5A6D61ED5336A00CE52F0 /* Pokemon_2.swift in Sources */,
 				4FC5A6A81ED5293F00CE52F0 /* ViewController.swift in Sources */,
 				4FC5A6A61ED5293F00CE52F0 /* AppDelegate.swift in Sources */,
 			);
