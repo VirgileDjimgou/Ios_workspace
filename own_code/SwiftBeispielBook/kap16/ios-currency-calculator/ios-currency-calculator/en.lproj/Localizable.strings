@@ -1,6 +1,0 @@
-/* wird angezeigt, wenn die Kurse älter als sechs Tage sind oder wenn gar keine Kurse verfügbar sind */
-"Keine aktuellen Kurse verfügbar!" = "Sorry, no up-to-date rates available.";
-
-/* zeigt das Datum der Kurse an */
-"Kurse vom %@" = "Rates from %@";
-
