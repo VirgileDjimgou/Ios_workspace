@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Temperature_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Temp-Calculator in Fahrenheit / Celsius:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDu-HD-1Y2" userLabel="Heading Label">
+                                <rect key="frame" x="16" y="20" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R3w-lX-rey" userLabel="Text Field">
+                                <rect key="frame" x="16" y="48.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="xpB-Av-ghY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Celsius:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ho-dU-jgZ" userLabel="Celsius Label">
+                                <rect key="frame" x="16" y="124.5" width="112" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZ8-SX-J0v" userLabel="Celsius Result">
+                                <rect key="frame" x="139" y="124" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Fahrenheit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUc-08-hl0" userLabel="Fahrenheit Label">
+                                <rect key="frame" x="16" y="153" width="112" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAZ-Yf-95i" userLabel="Calculate">
+                                <rect key="frame" x="139" y="48.5" width="76" height="30"/>
+                                <state key="normal" title="Processing"/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eF6-Iw-sBy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPC-2Z-ulb" userLabel="Fahrenheit Result">
+                                <rect key="frame" x="139" y="152.5" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eDu-HD-1Y2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ABa-Re-VIQ"/>
+                            <constraint firstItem="eDu-HD-1Y2" firstAttribute="leading" secondItem="R3w-lX-rey" secondAttribute="leading" id="HJ9-vi-lEH"/>
+                            <constraint firstItem="RUc-08-hl0" firstAttribute="top" secondItem="1ho-dU-jgZ" secondAttribute="bottom" constant="8" symbolic="YES" id="K9E-fw-gRu"/>
+                            <constraint firstItem="lAZ-Yf-95i" firstAttribute="leading" secondItem="TZ8-SX-J0v" secondAttribute="leading" id="Npc-hG-8os"/>
+                            <constraint firstItem="TZ8-SX-J0v" firstAttribute="leading" secondItem="1ho-dU-jgZ" secondAttribute="trailing" constant="11" id="OEs-uz-AYD"/>
+                            <constraint firstItem="1ho-dU-jgZ" firstAttribute="baseline" secondItem="TZ8-SX-J0v" secondAttribute="baseline" id="PJR-2Y-w9C"/>
+                            <constraint firstItem="lAZ-Yf-95i" firstAttribute="leading" secondItem="R3w-lX-rey" secondAttribute="trailing" constant="23" id="Rlc-fF-6Cg"/>
+                            <constraint firstItem="1ho-dU-jgZ" firstAttribute="baseline" secondItem="TZ8-SX-J0v" secondAttribute="firstBaseline" id="Sa1-dy-YKV"/>
+                            <constraint firstItem="R3w-lX-rey" firstAttribute="top" secondItem="eDu-HD-1Y2" secondAttribute="bottom" constant="8" symbolic="YES" id="UrD-bs-2Ne"/>
+                            <constraint firstItem="1ho-dU-jgZ" firstAttribute="top" secondItem="R3w-lX-rey" secondAttribute="bottom" constant="46" id="Wpt-1v-EG9"/>
+                            <constraint firstItem="RUc-08-hl0" firstAttribute="baseline" secondItem="tPC-2Z-ulb" secondAttribute="baseline" id="XhM-iv-WgJ"/>
+                            <constraint firstItem="TZ8-SX-J0v" firstAttribute="leading" secondItem="tPC-2Z-ulb" secondAttribute="leading" id="diK-SA-NaT"/>
+                            <constraint firstItem="TZ8-SX-J0v" firstAttribute="trailing" secondItem="tPC-2Z-ulb" secondAttribute="trailing" id="fzN-L3-8iz"/>
+                            <constraint firstItem="R3w-lX-rey" firstAttribute="top" secondItem="lAZ-Yf-95i" secondAttribute="top" id="hoM-4u-7ql"/>
+                            <constraint firstItem="RUc-08-hl0" firstAttribute="baseline" secondItem="tPC-2Z-ulb" secondAttribute="firstBaseline" id="lxE-SJ-Xw1"/>
+                            <constraint firstItem="1ho-dU-jgZ" firstAttribute="trailing" secondItem="RUc-08-hl0" secondAttribute="trailing" id="mFp-uW-6UV"/>
+                            <constraint firstItem="R3w-lX-rey" firstAttribute="leading" secondItem="1ho-dU-jgZ" secondAttribute="leading" id="qUZ-6m-OUu"/>
+                            <constraint firstItem="TZ8-SX-J0v" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="the-nt-MuZ"/>
+                            <constraint firstItem="1ho-dU-jgZ" firstAttribute="leading" secondItem="RUc-08-hl0" secondAttribute="leading" id="tkb-sA-SPf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eDu-HD-1Y2" secondAttribute="trailing" constant="65" id="u95-gM-uf6"/>
+                            <constraint firstItem="eDu-HD-1Y2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ucV-oo-dBm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="celsiusResult" destination="TZ8-SX-J0v" id="i3q-ie-zhg"/>
+                        <outlet property="fahrenheitResult" destination="tPC-2Z-ulb" id="BCh-4A-1R3"/>
+                        <outlet property="textField" destination="R3w-lX-rey" id="Bu8-wX-KxW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.2" y="58.920539730134934"/>
+        </scene>
+    </scenes>
+</document>
