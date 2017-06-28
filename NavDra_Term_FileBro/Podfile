@@ -1,0 +1,25 @@
+project 'NavDra_Term_FileBro.xcodeproj'
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'NavDra_Term_FileBro' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for NavDra_Term_FileBro
+  source 'https://github.com/CocoaPods/Specs.git'
+  pod 'FileBrowser', '~> 0.2'
+  pod 'SlideMenuControllerSwift'
+  
+    target 'NavDra_Term_FileBroTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'NavDra_Term_FileBroUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FileBrowser.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-NavDra_Term_FileBro.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-NavDra_Term_FileBroTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-NavDra_Term_FileBroUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>SlideMenuControllerSwift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6CE30F4EC55BCC9C97E631DA3922DE4B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7DD5D347AE86A299B5463E1B6CCA27C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8D458E42DCC3B386EC3F6C7B534E34AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0D1FB2AE282786E3800D4478CBF0FFC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE83C376580FD90A20EB2CAEAB6AAED8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

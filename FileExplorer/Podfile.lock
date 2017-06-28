@@ -1,0 +1,12 @@
+PODS:
+  - FileBrowser (0.2.0)
+
+DEPENDENCIES:
+  - FileBrowser (~> 0.2)
+
+SPEC CHECKSUMS:
+  FileBrowser: af8abc035daca66a6066351ae162c4af4c6b24dd
+
+PODFILE CHECKSUM: c53bbe5de027f0429b7880309fb2788b8feeb900
+
+COCOAPODS: 1.2.0
