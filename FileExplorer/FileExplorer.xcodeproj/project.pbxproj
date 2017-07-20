@@ -17,6 +17,7 @@
 		4FC775521F032B8900D9837C /* FileExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC775511F032B8900D9837C /* FileExplorerTests.swift */; };
 		4FC7755D1F032B8900D9837C /* FileExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7755C1F032B8900D9837C /* FileExplorerUITests.swift */; };
 		59786088C3E25ED97007C50F /* Pods_FileExplorerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A8609FEFC83212A4FDB6A7 /* Pods_FileExplorerUITests.framework */; };
+		CD147D541F20C25600525C5F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD147D531F20C25600525C5F /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		5A12A141D0D351D483C37E62 /* Pods-FileExplorerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileExplorerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FileExplorerUITests/Pods-FileExplorerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		67815165A75DA287F1774B7A /* Pods-FileExplorerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileExplorerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FileExplorerTests/Pods-FileExplorerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2050B371AF224DE44B3D5B8 /* Pods_FileExplorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FileExplorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD147D531F20C25600525C5F /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		D56C2579FD32119D41046675 /* Pods-FileExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-FileExplorer/Pods-FileExplorer.release.xcconfig"; sourceTree = "<group>"; };
 		EAB6623AB6580EE108C7C4EF /* Pods-FileExplorerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileExplorerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FileExplorerTests/Pods-FileExplorerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				4FC7753C1F032B8900D9837C /* AppDelegate.swift */,
+				CD147D531F20C25600525C5F /* Utility.swift */,
 				4FC7753E1F032B8900D9837C /* ViewController.swift */,
 				4FC775401F032B8900D9837C /* Main.storyboard */,
 				4FC775431F032B8900D9837C /* Assets.xcassets */,
@@ -448,6 +451,7 @@
 			files = (
 				4FC7753F1F032B8900D9837C /* ViewController.swift in Sources */,
 				4FC7753D1F032B8900D9837C /* AppDelegate.swift in Sources */,
+				CD147D541F20C25600525C5F /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,6 +702,7 @@
 				4FC775631F032B8900D9837C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FC775641F032B8900D9837C /* Build configuration list for PBXNativeTarget "FileExplorerTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +711,7 @@
 				4FC775661F032B8900D9837C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FC775671F032B8900D9837C /* Build configuration list for PBXNativeTarget "FileExplorerUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +720,7 @@
 				4FC775691F032B8900D9837C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

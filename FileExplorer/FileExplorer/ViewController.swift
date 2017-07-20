@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
 
     @IBAction func TestButton(_ sender: UIButton) {
-        CreateFolderVersion2()
+        CreateFolder(folderName: "TFolder",PathFolder: "Path_von_new_Folder") // Default in Dokument
         // by default the file browser will open in  app's documents  directory.
         present(fileBrowser, animated:true,completion:nil)
         
@@ -26,16 +26,22 @@ class ViewController: UIViewController {
     }
     
 
-    func CreateFolderVersion2(){
+    func CreateFolder(folderName: String , PathFolder:String) -> Bool{
+        let ReturnValue = false;
+        
+        // Default Path ist Dokument Ordner ....
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let dataPath = documentsDirectory.appendingPathComponent("TestApp.exe")
+        let dataPath = documentsDirectory.appendingPathComponent(folderName)
         
         do {
             try FileManager.default.createDirectory(atPath: dataPath.path, withIntermediateDirectories: true, attributes: nil)
         } catch let error as NSError {
             print("Error creating directory: \(error.localizedDescription)")
         }
-        }
+        
+        return ReturnValue
+    
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
