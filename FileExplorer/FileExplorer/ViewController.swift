@@ -12,36 +12,43 @@ import FileBrowser
 class ViewController: UIViewController {
     let fileBrowser = FileBrowser()
     let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+    let Util = Utility()
 
     @IBAction func TestButton(_ sender: UIButton) {
-        CreateFolder(folderName: "TFolder",PathFolder: "Path_von_new_Folder") // Default in Dokument
-        // by default the file browser will open in  app's documents  directory.
-        present(fileBrowser, animated:true,completion:nil)
+        // create new Folder for Test  Test Folder Function ... but is Optionnal .
+        // Default folder ist Dokuments-Ordner... es kann später geandert werden
         
-        fileBrowser.didSelectFile = { (file: FBFile) -> Void in
-            print(file.displayName)
-        }
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        Util.CreateFolder(folderName: "TestFakeFolder", documentsPath : documentsDirectory)
         
+        // call Explorer on Default  Directory ...  Documents 
+        CallExplorer(StartPathExplorer: "PathLocalDirectoryForStart")
+ 
         
     }
     
-
-    func CreateFolder(folderName: String , PathFolder:String) -> Bool{
-        let ReturnValue = false;
+    func  CallExplorer(StartPathExplorer : String)-> Bool{
+        var ReturnValue = false
         
-        // Default Path ist Dokument Ordner ....
-        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let dataPath = documentsDirectory.appendingPathComponent(folderName)
         
         do {
-            try FileManager.default.createDirectory(atPath: dataPath.path, withIntermediateDirectories: true, attributes: nil)
-        } catch let error as NSError {
-            print("Error creating directory: \(error.localizedDescription)")
+            try   // by default the file browser will open in  app's documents  directory.
+                present(fileBrowser, animated:true,completion:nil)
+            
+            fileBrowser.didSelectFile = { (file: FBFile) -> Void in
+                print(file.displayName)
+            }
+            // init Value ...
+            ReturnValue = true; // alles hat gut funktionniert ...
+            
+        } catch {
+            print("Error info: \(error)")
         }
         
-        return ReturnValue
-    
+        return  ReturnValue;
+        
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
